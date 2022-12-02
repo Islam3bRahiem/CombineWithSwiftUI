@@ -2,7 +2,7 @@
 //  CombineWithSwiftUIApp.swift
 //  CombineWithSwiftUI
 //
-//  Created by Islam Rahiem on 02/12/2022.
+//  Created by Mac
 //
 
 import SwiftUI
@@ -11,7 +11,8 @@ import SwiftUI
 struct CombineWithSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let viewModel = HomeViewModel()
+            HomeView(viewModel: viewModel)
         }
     }
 }
